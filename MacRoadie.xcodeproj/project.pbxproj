@@ -13,6 +13,12 @@
 		659CC5841B6EF2AB00D894E8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 659CC5831B6EF2AB00D894E8 /* Images.xcassets */; };
 		659CC5871B6EF2AB00D894E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 659CC5851B6EF2AB00D894E8 /* Main.storyboard */; };
 		659CC5931B6EF2AB00D894E8 /* MacRoadieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 659CC5921B6EF2AB00D894E8 /* MacRoadieTests.m */; };
+		659CC59E1B6EF2CB00D894E8 /* MIDIFilePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 659CC59D1B6EF2CB00D894E8 /* MIDIFilePlayer.m */; };
+		659CC5A01B6EF37B00D894E8 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659CC59F1B6EF37B00D894E8 /* CoreMIDI.framework */; };
+		659CC5A21B6EF38600D894E8 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 659CC5A11B6EF38600D894E8 /* AudioToolbox.framework */; };
+		659CC5D91B6F325D00D894E8 /* Blessed Assurance (Axe PCs).mid in Resources */ = {isa = PBXBuildFile; fileRef = 659CC5D81B6F325D00D894E8 /* Blessed Assurance (Axe PCs).mid */; };
+		659CC5DC1B6F391E00D894E8 /* MIDIDeviceScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 659CC5DB1B6F391E00D894E8 /* MIDIDeviceScanner.m */; };
+		659CC5DE1B6F3EDC00D894E8 /* Blessed Assurance (Performance Track).m4a in Resources */ = {isa = PBXBuildFile; fileRef = 659CC5DD1B6F3DCF00D894E8 /* Blessed Assurance (Performance Track).m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +44,14 @@
 		659CC58C1B6EF2AB00D894E8 /* MacRoadieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacRoadieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		659CC5911B6EF2AB00D894E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		659CC5921B6EF2AB00D894E8 /* MacRoadieTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MacRoadieTests.m; sourceTree = "<group>"; };
+		659CC59C1B6EF2CB00D894E8 /* MIDIFilePlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDIFilePlayer.h; sourceTree = "<group>"; };
+		659CC59D1B6EF2CB00D894E8 /* MIDIFilePlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIDIFilePlayer.m; sourceTree = "<group>"; };
+		659CC59F1B6EF37B00D894E8 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
+		659CC5A11B6EF38600D894E8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		659CC5D81B6F325D00D894E8 /* Blessed Assurance (Axe PCs).mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = "Blessed Assurance (Axe PCs).mid"; sourceTree = "<group>"; };
+		659CC5DA1B6F391E00D894E8 /* MIDIDeviceScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDIDeviceScanner.h; sourceTree = "<group>"; };
+		659CC5DB1B6F391E00D894E8 /* MIDIDeviceScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIDIDeviceScanner.m; sourceTree = "<group>"; };
+		659CC5DD1B6F3DCF00D894E8 /* Blessed Assurance (Performance Track).m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Blessed Assurance (Performance Track).m4a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				659CC5A21B6EF38600D894E8 /* AudioToolbox.framework in Frameworks */,
+				659CC5A01B6EF37B00D894E8 /* CoreMIDI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +77,8 @@
 		659CC56D1B6EF2AB00D894E8 = {
 			isa = PBXGroup;
 			children = (
+				659CC5A11B6EF38600D894E8 /* AudioToolbox.framework */,
+				659CC59F1B6EF37B00D894E8 /* CoreMIDI.framework */,
 				659CC5781B6EF2AB00D894E8 /* MacRoadie */,
 				659CC58F1B6EF2AB00D894E8 /* MacRoadieTests */,
 				659CC5771B6EF2AB00D894E8 /* Products */,
@@ -86,6 +104,12 @@
 				659CC5831B6EF2AB00D894E8 /* Images.xcassets */,
 				659CC5851B6EF2AB00D894E8 /* Main.storyboard */,
 				659CC5791B6EF2AB00D894E8 /* Supporting Files */,
+				659CC59C1B6EF2CB00D894E8 /* MIDIFilePlayer.h */,
+				659CC59D1B6EF2CB00D894E8 /* MIDIFilePlayer.m */,
+				659CC5D81B6F325D00D894E8 /* Blessed Assurance (Axe PCs).mid */,
+				659CC5DD1B6F3DCF00D894E8 /* Blessed Assurance (Performance Track).m4a */,
+				659CC5DA1B6F391E00D894E8 /* MIDIDeviceScanner.h */,
+				659CC5DB1B6F391E00D894E8 /* MIDIDeviceScanner.m */,
 			);
 			path = MacRoadie;
 			sourceTree = "<group>";
@@ -196,8 +220,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				659CC5DE1B6F3EDC00D894E8 /* Blessed Assurance (Performance Track).m4a in Resources */,
 				659CC5841B6EF2AB00D894E8 /* Images.xcassets in Resources */,
 				659CC5871B6EF2AB00D894E8 /* Main.storyboard in Resources */,
+				659CC5D91B6F325D00D894E8 /* Blessed Assurance (Axe PCs).mid in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,9 +241,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				659CC5DC1B6F391E00D894E8 /* MIDIDeviceScanner.m in Sources */,
 				659CC5821B6EF2AB00D894E8 /* ViewController.m in Sources */,
 				659CC57F1B6EF2AB00D894E8 /* main.m in Sources */,
 				659CC57D1B6EF2AB00D894E8 /* AppDelegate.m in Sources */,
+				659CC59E1B6EF2CB00D894E8 /* MIDIFilePlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +435,7 @@
 				659CC5981B6EF2AB00D894E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		659CC5991B6EF2AB00D894E8 /* Build configuration list for PBXNativeTarget "MacRoadieTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +444,7 @@
 				659CC59B1B6EF2AB00D894E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

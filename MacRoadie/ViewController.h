@@ -1,15 +1,16 @@
-//
-//  ViewController.h
-//  MacRoadie
-//
-//  Created by Bradley Spaulding on 8/2/15.
-//  Copyright (c) 2015 Motingo. All rights reserved.
-//
-
 #import <Cocoa/Cocoa.h>
+#include "MIDIFilePlayer.h"
+#include "MIDIDeviceScanner.h"
+#import <AVFoundation/AVAudioPlayer.h>
 
-@interface ViewController : NSViewController
+@interface ViewController : NSViewController {
+  AVAudioPlayer *audioPlayer;
+  BOOL playing;
+  MIDIFilePlayer *midiFilePlayer;
+}
 
+@property (weak) IBOutlet NSPopUpButton *midiDevicePopUp;
+@property (weak) IBOutlet NSButton *togglePlayingButton;
 
 @end
 
